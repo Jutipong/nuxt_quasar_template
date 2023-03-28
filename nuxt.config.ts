@@ -1,6 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["nuxt-quasar-ui"],
+  modules: ["@vue-macros/nuxt", "nuxt-quasar-ui", "@nuxtjs/google-fonts"],
+  //   experimental: {
+  //     reactivityTransform: true,
+  //   },
+  macros: {},
+  googleFonts: {
+    download: true,
+    base64: true,
+    families: {
+      Roboto: true,
+      Poppins: true,
+    },
+  },
   quasar: {
     plugins: [
       "AppFullscreen",
@@ -12,7 +24,7 @@ export default defineNuxtConfig({
       "Dark",
     ],
     extras: {
-      font: "roboto-font",
+      //   font: "roboto-font",
       fontIcons: ["material-icons"],
     },
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <div class="q-pb-lg">
-      <q-toggle v-model="dense" label="Dense QSelect" />
+      <q-toggle v-model="dense" label="ทดสอบ ทดสอบ" />
       <q-toggle v-model="denseOpts" label="Dense options" />
     </div>
 
@@ -154,6 +154,8 @@
   </div>
   <hr />
   <DataTableTest></DataTableTest>
+  <hr />
+  <TestComponent></TestComponent>
 </template>
 
 <script>
