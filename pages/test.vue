@@ -152,17 +152,19 @@
       </q-select>
     </div>
   </div>
+  <hr />
+  <DataTableTest></DataTableTest>
 </template>
 
 <script>
 import { ref } from "vue";
+import DataTableTest from "~~/components/DataTableTest.vue";
 
 export default {
   setup() {
     definePageMeta({
       middleware: ["auth"],
     });
-
     return {
       model: ref(null),
       options: ["Google", "Facebook", "Twitter", "Apple", "Oracle"],
@@ -170,5 +172,6 @@ export default {
       denseOpts: ref(false),
     };
   },
+  components: { DataTableTest },
 };
 </script>
