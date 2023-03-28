@@ -497,7 +497,7 @@
   resolved "https://registry.yarnpkg.com/@nuxt/devalue/-/devalue-2.0.0.tgz#c7bd7e9a516514e612d5d2e511ffc399e0eac322"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.3.2", "@nuxt/kit@^3.2.0":
+"@nuxt/kit@3.3.2", "@nuxt/kit@^3.2.0", "@nuxt/kit@^3.3.1":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.3.2.tgz#e3cd19c0f5cd0f124fff6f659a5f25002f808946"
   integrity sha512-mHucMYuN/nVJp0p+L6ezzEls8Y1PerAXCJi01lS3Z5ozz+l2OusEfes8EBxWcy3x0C5465ignXCujQs3/LAvnQ==
@@ -612,6 +612,11 @@
     vite-node "^0.29.7"
     vite-plugin-checker "^0.5.6"
     vue-bundle-renderer "^1.0.2"
+
+"@quasar/extras@^1.16.1":
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/@quasar/extras/-/extras-1.16.1.tgz#1be607c200c8426497b7a6de21056edb28ef122a"
+  integrity sha512-bRnWSC469Qogw0ceDVd0yTQVBQjyhV6L10EMixXK1dpOs9tWGKRVgyyGZ5DEBkDgyn4BeRuV5s5e9VrQdQPsOg==
 
 "@rollup/plugin-alias@^4.0.3":
   version "4.0.3"
@@ -2591,6 +2596,11 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
+mimic-fn@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-4.0.0.tgz#60a90550d5cb0b239cca65d893b1a53b29871ecc"
+  integrity sha512-vqiC06CuhBTUdZH+RYl8sFrL096vA45Ok5ISO6sE/Mr1jRbGH4Csnhi8f3wKVl7x8mO4Au7Ir9D3Oyv1VYMFJw==
+
 minimatch@^3.0.4, minimatch@^3.1.1:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -2840,6 +2850,17 @@ nuxi@3.3.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
+nuxt-quasar-ui@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/nuxt-quasar-ui/-/nuxt-quasar-ui-1.3.1.tgz#4b3f506d27df08dba51b67ced393aa3b323b4ead"
+  integrity sha512-HWi3FhZ3VaRdpMt1LUIy60ly91cboGwRDfJn18AAtPVrc9qOOBzbfl09JtVDXwnBQ9AWZuobJVRCiHZv5JaRkQ==
+  dependencies:
+    "@nuxt/kit" "^3.3.1"
+    "@rollup/pluginutils" "^5.0.2"
+    magic-string "^0.30.0"
+    p-memoize "^7.1.1"
+    unplugin "^1.3.1"
+
 nuxt@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-3.3.2.tgz#02f2f4594eb59a56da115651f6a5e913b47914e7"
@@ -2957,6 +2978,14 @@ os-tmpdir@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
   integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
+
+p-memoize@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/p-memoize/-/p-memoize-7.1.1.tgz#53b1d0e6007288f7261cfa11a7603b84c9261bfa"
+  integrity sha512-DZ/bONJILHkQ721hSr/E9wMz5Am/OTJ9P6LhLFo2Tu+jL8044tgc9LwHO8g4PiaYePnlVVRAJcKmgy8J9MVFrA==
+  dependencies:
+    mimic-fn "^4.0.0"
+    type-fest "^3.0.0"
 
 parse-git-config@^3.0.0:
   version "3.0.0"
@@ -3303,6 +3332,11 @@ prr@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
   integrity sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==
+
+quasar@^2.11.9:
+  version "2.11.9"
+  resolved "https://registry.yarnpkg.com/quasar/-/quasar-2.11.9.tgz#239413cd14e9be9bcabc125f97209944832e5277"
+  integrity sha512-ZHSZRQJk/zN6whhvihh0EyRpAs3IYBZZ+1O5/RSe7nXyOXOVi6RwPBzleab5HoTxtHL5Yuk3/bKgb3CywAyBQQ==
 
 queue-microtask@^1.2.2:
   version "1.2.3"
